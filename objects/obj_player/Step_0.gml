@@ -12,3 +12,9 @@ if(keyboard_check(ord("R"))){
 	x = irandom_range(0, room_width);
 	y = ystart - 32;
 }
+
+if(place_meeting(x, y, obj_water)){
+	spd = 1;
+} else{
+	spd = 2;
+}
