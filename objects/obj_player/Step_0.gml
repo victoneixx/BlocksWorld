@@ -9,12 +9,7 @@ grav = clamp(grav, 0, 4);
 
 
 if(keyboard_check(ord("R"))){
-	x = irandom_range(0, room_width);
+	x = irandom_range(0, global.cell_w);
 	y = ystart - 32;
 }
 
-if(place_meeting(x, y, obj_water)){
-	spd = 1;
-} else{
-	spd = 2;
-}
