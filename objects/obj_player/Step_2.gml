@@ -1,5 +1,4 @@
 /// @description Inserir descrição aqui
-var _jump = keyboard_check(vk_space);
 if(place_meeting(x+hspd, y, all)){
 	while(!place_meeting(x+ sign(hspd), y, all)){
 		x = x + sign(hspd);
@@ -15,7 +14,3 @@ if(place_meeting(x, y+vspd, all)){
 	vspd = 0;
 }
 y = y + vspd;
-
-if(place_meeting(x,y+1,all) && _jump){
-	vspd -= 5.2;
-}

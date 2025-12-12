@@ -1,7 +1,7 @@
 /// @description Inserir descrição aqui
 if(global.distance){
 	if(target){
-		life += 0.2;
+		life += 0.3;
 	}
 }
 

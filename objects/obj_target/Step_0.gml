@@ -6,7 +6,3 @@ if(life >= 11){
 if(target == false){
 	life = 0;
 }
-
-if(life >= 11){
-	audio_stop_sound(snd_hit_block);
-}
