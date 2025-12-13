@@ -1,8 +1,4 @@
 /// @description Inserir descrição aqui
-if(life >= 11){
+if(target){
 	instance_destroy();
-}
-
-if(target == false){
-	life = 0;
 }

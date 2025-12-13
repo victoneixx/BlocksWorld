@@ -13,3 +13,5 @@ if(keyboard_check(ord("R"))){
 	y = ystart - 32;
 }
 
+show_debug_message(y);
+

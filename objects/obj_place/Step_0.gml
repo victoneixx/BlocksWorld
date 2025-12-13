@@ -1,9 +1,17 @@
 /// @description Inserir descrição aqui
-
-id_block = clamp(id_block, 0, id_block_max);
-
 _mos_x = floor(mouse_x/16)*16 + 8;
 _mos_y = floor(mouse_y/16)*16 + 8;
+if(_mos_x < 0 || _mos_x > room_width || 
+_mos_y < -16*30  || _mos_y > room_height){
+	global.can = true;
+} else {
+	global.can = false
+}
+if(global.can){exit}
+
+id_block_max = array_length(block) - 1;
+id_block = clamp(id_block, 0, id_block_max);
+
 var _pos_block = position_meeting(_mos_x, _mos_y, obj_target);
 var _pos_player = collision_rectangle(_mos_x - 8, _mos_y - 8, _mos_x + 8, _mos_y + 8, obj_player, 0, 1);
 _area = collision_rectangle(_mos_x - 16, _mos_y - 16, _mos_x + 16, _mos_y + 16, obj_target, 0, 1);
