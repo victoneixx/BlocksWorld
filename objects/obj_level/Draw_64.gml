@@ -5,7 +5,7 @@ var _pos_y = display_get_gui_height()/2;
 draw_set_font(_txt);
 if(info){
 	draw_text(8, 8, "fps:" + string(fps));
-	draw_text(8, 8*4, "makelands 1.0.2 alpha");
+	draw_text(8, 8*4, "makelands 1.0.2_1 alpha");
 	draw_text(8, 8*7, "songs by:sterling_ray");
 	draw_text(8, 8*10, "x:" + string(obj_player.x));
 	draw_text(8, 8*13, "y:" + string(round(obj_player.y)));
