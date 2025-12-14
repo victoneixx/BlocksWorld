@@ -8,10 +8,7 @@ vspd = vspd + grav;
 grav = clamp(grav, 0, 4);
 if(hspd != 0){image_xscale = sign(hspd)}
 
-if(keyboard_check(ord("R"))){
+if(keyboard_check(ord("R")) || y > 1024){
 	x = irandom_range(0, global.cell_w);
 	y = ystart - 32;
 }
-
-show_debug_message(y);
-

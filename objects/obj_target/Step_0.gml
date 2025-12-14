@@ -6,3 +6,4 @@ if(life >= 11){
 if(target == false){
 	life = 0;
 }
+
