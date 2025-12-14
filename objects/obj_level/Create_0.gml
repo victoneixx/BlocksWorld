@@ -2,7 +2,7 @@
 randomize();
 cell_s = 16;
 global.cell_w = room_width;
-global.cell_h = room_height;
+global.cell_h = 480;
 info = false;
 
 for(var xx = 0; xx < global.cell_w; xx += cell_s){

@@ -1,5 +1,7 @@
 /// @description Inserir descrição aqui
-id_block++;
-if(id_block < 6){
-	audio_play_sound(snd_wheel, 0, 0);
+if(!global.can){
+	id_block++;
+	if(id_block < 7){
+		audio_play_sound(snd_wheel, 0, 0);
+	}
 }

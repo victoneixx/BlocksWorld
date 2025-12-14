@@ -2,7 +2,7 @@
 _mos_x = floor(mouse_x/16)*16 + 8;
 _mos_y = floor(mouse_y/16)*16 + 8;
 if(_mos_x < 0 || _mos_x > room_width || 
-_mos_y < -16*8  || _mos_y > room_height){
+_mos_y < -16*8  || _mos_y > global.cell_h){
 	global.can = true;
 } else {
 	global.can = false
